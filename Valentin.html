@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Anu ❤️</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#ff758c,#ff7eb3);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    text-align:center;
+    overflow:hidden;
+}
+
+.card{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+    max-width:350px;
+    animation:fadeIn 1.5s ease-in-out;
+}
+
+h1{
+    color:#ff2e63;
+}
+
+p{
+    color:#444;
+    line-height:1.6;
+}
+
+button{
+    margin-top:20px;
+    padding:10px 25px;
+    border:none;
+    border-radius:25px;
+    background:#ff2e63;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#d61c4e;
+    transform:scale(1.05);
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card" id="page1">
+    <h1>Happy Valentine’s Anu, My Alu ❤️</h1>
+    <p>You are my cutest happiness 😌💖</p>
+    <button onclick="nextPage()">Next ➡️</button>
+</div>
+
+<div class="card" id="page2" style="display:none;">
+    <h1>Happy Valentine’s My Love Bacha ❤️</h1>
+    <p>
+        You are the most beautiful part of my life ✨<br><br>
+        When I talk to you, everything feels peaceful.<br>
+        When you smile, my whole world lights up.<br><br>
+        I feel lucky every single day to have you.<br>
+        You are my comfort, my happiness, my forever person 💕<br><br>
+        No matter what happens, I’ll always choose you.<br>
+        Always yours… forever and ever ❤️
+    </p>
+</div>
+
+<script>
+function nextPage(){
+    document.getElementById("page1").style.display="none";
+    document.getElementById("page2").style.display="block";
+}
+</script>
+
+</body>
+</html>
